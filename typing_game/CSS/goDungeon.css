@@ -1,0 +1,77 @@
+body, html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+}
+
+#game-container {
+    text-align: center;
+}
+
+#monster-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#monster-image {
+    width: 200px;
+    height: auto;
+}
+
+#monster-health {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+#player-health {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+#furigana-display {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+#typing-challenge {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+#typing-area {
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 80%;
+    max-width: 400px;
+}
+
+#start-game-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#start-game-button {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#monster-container img {
+    width: 200px;
+    height: auto;
+}
+
+.hidden {
+    visibility: hidden;
+}

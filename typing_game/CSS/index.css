@@ -1,0 +1,65 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  background-color: #f0f8ff;
+  display: flex;
+  flex-direction: column;        
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header {
+  text-align: center;
+  margin-top: 50px; 
+  width: 100%; 
+}
+
+.container {
+  display: flex; 
+  justify-content: space-around; 
+  align-items: flex-start;
+  width: 70%;
+  margin-top: 20px; 
+}
+
+.section {
+  margin-top: 0px; 
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 30%; 
+  min-width: 250px; 
+}
+
+.input-field {
+  margin: 10px 0;
+  padding: 10px;
+  width: 90%; 
+}
+
+.button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  width: 100%; 
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.new-user {
+  margin-left: 0%;
+}
+
+.existing-user {
+  margin-left: 5%;
+}
+
+.play-without-register {
+  margin-left: 5%; 
+}
+

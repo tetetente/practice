@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>タイピングゲーム</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>タイピングゲームへようこそ！</h1>
+        <p>タイピングでモンスターを倒していこう！</p>
+    </div>
+
+    <div class="container">
+        <div class="section new-user">
+            <p>初めての人はこちら</p>
+            <form action="../PHP/register.php" method="post">
+                <input type="text" name="name" class="input-field" placeholder="名前を入力"><br>
+                <input type="password" name="password" class="input-field" placeholder="パスワードを入力"><br>
+                <button type="submit" class="button">登録</button>
+            </form>
+        </div>
+
+        <div class="section existing-user">
+            <p>登録済の人はこちら</p>
+            <form action="../PHP/login.php" method="post">
+                <input type="text" name="name" class="input-field" placeholder="名前を入力">
+                <input type="password" name="password" class="input-field" placeholder="パスワードを入力">
+                <button type="submit" class="button">ログイン</button>
+            </form>
+        </div>
+
+        <div class="section play-without-register">
+            <p>登録せず遊ぶ人はこちら</p>
+            <button class="button" onclick="setCookie()">遊ぶ</button>
+        </div>
+
+    </div>
+    <script src="../JavaScript/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body, html {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;
+  }
+  
+  #dungeon-select-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px; 
+  }
+  
+  .dungeon-level-button {
+    margin: 10px;
+    padding: 15px 20px;
+    min-width: 200px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #start-game-container {
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 80px; 
+    overflow: hidden; 
+  }
+  
+  
+  #start-game-button {
+    padding: 15px 30px;
+    width: 200px;
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .hidden {
+    visibility: hidden; 
+  }

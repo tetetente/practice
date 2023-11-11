@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>簡単なダンジョン</title>
+    <link rel="stylesheet" href="../CSS/goDungeon.css">
+</head>
+
+<body>
+    <div id="game-container">
+        <div id="monster-container">
+            <img src="" alt="モンスター" id="monster-image">                <!-- モンスターの画像を表示 -->
+            <div id="monster-health">モンスターのHP: <span>0</span></div>   <!-- モンスターのHPを表示 -->
+        </div>
+        <div id="player-health">プレイヤーのHP: <span>100</span></div>      <!-- プレイヤーのHPを表示 -->
+        <div id="furigana-display"></div>                                  <!-- フリガナを表示 -->
+        <div id="typing-challenge">ここに問題が表示されます。</div>          <!-- 問題を表示する -->
+        <input type="text" id="typing-area" placeholder="ここにタイピング！" autofocus/> <!-- ユーザーが入力するテキストボックス -->
+    </div>
+    <script src="https://unpkg.com/wanakana"></script>                      <!-- wanakanaを読み込む -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>     <!-- jQueryを読み込む -->
+    <script src="../JavaScript/goDungeon.js"></script>                    <!-- easyDangeon.jsを読み込む -->
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ダンジョン選択</title>
+    <link rel="stylesheet" href="../CSS/selectDungeon.css">
+</head>
+
+<body>
+    <div class="get-name">
+        <p>さん、ようこそ！</p>
+    </div>
+    <div id="dungeon-select-container">
+        <button class="dungeon-level-button" data-level="easy">初級</button> <!-- 初級と書かれたボタンを配置 -->
+        <button class="dungeon-level-button" data-level="medium">中級</button> <!-- 中級と書かれたボタンを配置 -->
+        <button class="dungeon-level-button" data-level="hard">上級</button> <!-- 上級と書かれたボタンを配置 -->
+    </div>
+    <div id="start-game-container" class="hidden"> <!-- 開始と書かれたボタンを配置 -->
+        <button id="start-game-button">開始</button>
+    </div>
+    <script src="../JavaScript/selectDungeon.js"></script>
+</body>
+
+</html>
