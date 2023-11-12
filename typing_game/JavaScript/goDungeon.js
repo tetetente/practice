@@ -58,11 +58,11 @@ $(document).ready(function () {
 
     // 問題文を表示する関数
     function displayNewChallenge() {
-        selectList = typing_challenges[Math.floor(Math.random() * typing_challenges.length)];     // 問題文のリストをランダムに取得
-        problem = selectList[0];                                                                  // 問題文を取得
-        furigana = setFurigana(selectList[1]);                                                    // 問題文のフリガナを取得
-        $('#typing-challenge').text(problem);                                                     // HTMLのtyping-challengeに表示
-        $('#furigana-display').text(selectList[1]);                                               // HTMLのfurigana-displayに表示
+        selectList = typing_easy[Math.floor(Math.random() * typing_easy.length)];     // 問題文のリストをランダムに取得
+        problem = selectList[0];                                                      // 問題文を取得
+        furigana = setFurigana(selectList[1]);                                        // 問題文のフリガナを取得
+        $('#typing-challenge').text(problem);                                         // HTMLのtyping-challengeに表示
+        $('#furigana-display').text(selectList[1]);                                   // HTMLのfurigana-displayに表示
     }
 
     // furiganaをそれぞれ個々に分ける関数
@@ -103,7 +103,7 @@ $(document).ready(function () {
                 $('#furigana-display').text(furigana.join(''));                   // 問題文のひらがなを更新
                 currentMonster.hp -= 2;                                           // モンスターの体力を減らす
                 $('#monster-health span').text(currentMonster.hp);                // モンスターの体力表示を更新
-            } else {
+            } else {                                                              // 入力された文字を間違えた場合
                 playerHealth -= 1;                                                // プレイヤーの体力を減らす
                 updateHealthDisplay();                                            // プレイヤーの体力表示を更新
             }
@@ -128,7 +128,7 @@ $(document).ready(function () {
 });
 
 // 問題文格納用のテーブル
-let typing_challenges = [
+let typing_easy = [
     ["軽快なステップで", "けいかいなすてっぷで"],
     ["青い空を見上げて", "あおいそらをみあげて"],
     ["夕暮れ時の散歩", "ゆうぐれときのさんぽ"],
@@ -149,4 +149,9 @@ let typing_challenges = [
     ["朝露に濡れた草花", "あさつゆにぬれたくさばな"],
     ["虹のかかる空に", "にじのかかるそらに"],
     ["夜の市場を歩く", "よるのいちばをあるく"]
+];
+
+let typing_normal = [
+    
+
 ];

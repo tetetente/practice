@@ -15,18 +15,20 @@ if ($conn->connect_error) {
 // クッキーからユーザーIDを取得
 $user_id = $_COOKIE['userid'];
 
-// データベースからユーザー名を取得
-$sql = "SELECT name FROM users WHERE id = ?";
-$stmt = $conn->prepare($sql);
-$stmt->bind_param("s", $user_id);
-$stmt->execute();
-$result = $stmt->get_result();
-if ($result->num_rows > 0) {
-    $row = $result->fetch_assoc();
-    $name = $row["name"];
-    echo $name;
-} 
+if ($user_id == 0) {    // 登録せず遊ぶ場合
+    echo "ゲスト";                
+} else {
+    $sql = "SELECT name FROM users WHERE id = ?";
+    $stmt = $conn->prepare($sql);
+    $stmt->bind_param("s", $user_id);
+    $stmt->execute();
+    $result = $stmt->get_result();
+    if ($result->num_rows > 0) {
+        $row = $result->fetch_assoc();
+        $name = $row["name"];
+        echo $name;
+    }
+}
 
 // 接続終了
 $conn->close();
-?>
